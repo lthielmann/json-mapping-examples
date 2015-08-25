@@ -1,0 +1,6 @@
+group 'de.lth.examples'
+
+dependencies {
+    compile 'javax.ws.rs:javax.ws.rs-api:2.0.1'
+    compile "org.projectlombok:lombok:$lombokVersion"
+}

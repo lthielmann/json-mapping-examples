@@ -1,0 +1,5 @@
+rootProject.name = 'json-mapping-examples'
+include 'jackson'
+include 'moxy'
+include 'common'
+

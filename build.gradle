@@ -1,0 +1,9 @@
+group 'de.lth.examples'
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+}

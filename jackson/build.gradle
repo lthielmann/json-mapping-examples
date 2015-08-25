@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.5.RELEASE")
+    }
+}
+
+apply plugin: 'spring-boot'
+
+group 'de.lth.examples'
+
+dependencies {
+    compile project(':common')
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-jersey'
+
+    compile "org.glassfish.jersey.ext:jersey-proxy-client:2.14"
+}

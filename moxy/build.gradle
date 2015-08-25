@@ -1,0 +1,25 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.5.RELEASE")
+    }
+}
+
+apply plugin: 'spring-boot'
+
+group 'de.lth.examples'
+
+configurations {
+    compile.exclude module: 'jersey-media-json-jackson'
+}
+
+dependencies {
+    compile project(':common')
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-jersey'
+
+    compile 'org.glassfish.jersey.media:jersey-media-moxy:2.14'
+}
